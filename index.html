@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8"/>
+            <title>Bem-vindo à FinalBox | Desenvolvimento Web | Belém, PA, Brasil</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            <script  type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
+            <script  type="text/javascript" src="assets/js/jquery.backgroundvideo.min.js"></script>
+            <script  type="text/javascript" src="assets/js/main.js"></script>
+             
+             <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+                
+            <!-- ESTILO ORIGINAL DE PÁGINA --> 
+            <link rel="stylesheet" href="assets/css/style.css"/>
+            
+            <!-- Latest compiled and minified JavaScript -->
+            <script src="assets/js/bootstrap.min.js"></script>
+           <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+   <script>
+		var map;
+		function initialize() {
+		  var mapOptions = {
+			zoom: 15,
+                        panControl: false, 
+    draggable: false,
+        zoomControl: false,
+        scrollwheel: false,
+			center: new google.maps.LatLng(-1.457603, -48.496297)
+		  };
+		  map = new google.maps.Map(document.getElementById('map-canvas'),
+			  mapOptions);
+			  
+			  var marker = new google.maps.Marker({
+    map: map,
+    position: map.getCenter()
+  });
+  var infowindow = new google.maps.InfoWindow();
+  infowindow.setContent('<b>Vyrko - Tecnologia & Soluções Web</b>');
+  google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map, marker);
+  });
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+   
+   <script>
+        function toggleCP() {            
+            if($("#toggle-menu").hasClass("closed")){
+                    $('#toggle-menu').removeClass("closed");
+                    $('#menu').removeClass('closed');
+                    $('#toggle-menu').addClass("open");
+                    $('#menu').addClass('open');
+            } else {
+                    $('#toggle-menu').removeClass("open");
+                    $('#menu').removeClass('open');
+                    $('#toggle-menu').addClass("closed");
+                    $('#menu').addClass('closed');
+            }
+        }
+        
+    </script>
+        </head>
+        <body>
+            
+            
+            <div class="wrapper">
+                <div class="screen" id="inkVideo">
+                <div class="overlay"></div>
+                </div>
+                 <section id="menu-container">
+                <div class="menu-back">
+                    <div class="toggle-hamburga closed" id="toggle-menu" onclick="toggleCP()">
+                        <span class'over-span'></span>
+                        <span class="one"></span>
+                        <span class="two"></span>
+                        <span class'bottom-span'></span>
+                    </div>
+                     <div class="toggle-title invisible" id="logo-minimized">
+                        <div class="logo-top">
+                            <h1 id="logo-top">
+                                <span>FinalBox - Desenvolvimento Web</span>
+                            </h1>
+                        </div>
+                     </div>
+                </div>
+                <nav id="menu" class="closed" >
+                    <ul class="menu-nav">
+                        <li>HOME</li>
+                        <li>ABOUT</li>
+                        <li>OUR SERVICES</li>
+                        <li>PORTIFOLIO</li>
+                    </ul>
+                </nav>
+            </section>
+                
+                <div class="intro">
+                    <div class="logo">
+                        <h1 id="topo" data-sr="enter from the top and hustle 50px over 1.5s"><span>FinalBox - DESENVOLVIMENTO WEB</span></h1>
+                         <h2 data-sr="enter from the top and hustle 50px over 1.5s">DESENVOLVIMENTO WEB</h2>
+                         <p data-sr="enter from the top and hustle 50px over 1.5s">NÓS CRIAMOS EXPERIÊNCIAS DIGITAIS INCRÍVEIS PARA CLIENTES INCRÍVEIS.</p>
+                    </div>
+                   
+                    <a href="#" class="splash-arrow"><img src="assets/img/down-arrow.png" alt="" /></a>
+                </div>
+            </div>
+            
+            
+            
+            
+            <section class="services" id="service">
+                <div class="container-fluid">
+                    <div class="row main-services">
+                         <div class="col-lg-12">
+                            <h3 data-sr="enter top over 0.5s wait 0.5s">Veja qual serviço melhor se encaixa no seu projeto</h3>
+                            <hr></hr>
+                        </div>
+                    </div>
+                    <div class="row service">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 item-service">
+                                <div class="feature-icon">
+                                    <img  src="assets/img/briefcase.png" data-sr="enter top over 0.5s wait 0.5s"/>
+                                </div>
+                                <p class="title" data-sr="enter top over 0.5s wait 0.5s">Desenvolvimento Web</p>
+                                <p class="description" data-sr="enter top over 0.5s wait 0.5s">Códigos com atenção a semântica e lógica utilizando linguagens modernas
+                                como HTML5 e CSS3 para você só se preocupar com o conteúdo.</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 item-service">
+                                <div class="feature-icon">
+                                    <img  src="assets/img/glasses.png" data-sr="enter top over 0.5s wait 0.5s"/>
+                                </div>
+                                <p class="title" data-sr="enter top over 0.5s wait 0.5s">Design Responsivo</p>
+                                <p class="description" data-sr="enter top over 0.5s wait 0.5s">A experiência de navegação web ideal agora também
+                                em tablets, smartphones e até mesmo na sua TV.</p>
+                            </div>
+                            <div class="clearfix visible-md-block"></div>
+                            <div class="clearfix visible-sm-block"></div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 item-service">
+                                 <div class="feature-icon">
+                                    <img  src="assets/img/rocket.png " data-sr="enter top over 0.5s wait 0.5s"/>
+                                </div>
+                                 <p class="title" data-sr="enter top over 0.5s wait 0.5s">Mobile</p>
+                                 <p class="description" data-sr="enter top over 0.5s wait 0.5s">AA experiência de navegação web ideal agora
+                                 também em tablets, smartphones e até mesmo na sua TV.</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 item-service">
+                                 <div class="feature-icon">
+                                    <img  src="assets/img/store.png" data-sr="enter top over 0.5s wait 0.5s" />
+                                </div>
+                                 <p class="title" data-sr="enter top over 0.5s wait 0.5s">Lojas Virtuais</p>
+                                 <p class="description" data-sr="enter top over 0.5s wait 0.5s">A experiência de navegação web ideal agora também em tablets,
+                                 smartphones e até mesmo na sua TV.</p>
+                            </div>
+                     
+                    </div>
+                    <div class="row service-footer">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <hr></hr>
+                            <p data-sr="enter top over 0.5s wait 0.5s">Conheça os nossos <a href="">serviços</a> detalhadamente ou entre em contato para solicitar um <a href="">orçamento</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <section class="features">
+                <div class="container-fluid">
+                    <div class="row mainFeature">
+                         <div class="col-lg-6 hidden-xs hidden-sm hidden-md feature">
+                            <div class="feature-img"> <img src="assets/img/entyre.png" data-sr="enter left over 0.8s wait 0.5s"/></div>
+                            
+                        </div>
+                        <div class="col-lg-6">
+                            <h3>Desenvolvemos software eficiente e com visual único</h3>
+                            
+                            
+                            <p >Buscamos apasionadamente crear experiencias de usuario óptimas, diseñando siempre de acuerdo
+                            a objetivos y poniendo cuidado en cada uno de los aspectos que componen a un proyecto exitoso.</p>
+                             <a href="" class="moreButton">Saiba mais</a>
+                        </div>
+                      
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="secundary-feature">
+                <div class="container-fluid">
+                    <div class="row secundaryFeature">
+                        <div class="col-lg-6 feature">
+                            <h3>Trabalhamos com 
+                            HTML 5 e outras tecnologias de  
+                            ponta</h3>
+                            
+                            <p>Para desenvolver produtos limpos e modernos que funcionam perfeitamente bem em qualquer dispositivo e sistema que você utilize.
+                            </p>
+                             <a href="" class="moreButton">Saiba mais</a>
+                      </div>
+                         <div class="col-lg-6 hidden-xs hidden-sm hidden-md feature">
+                            <div class="feature-img"> <img src="assets/img/image016.png" class="img-responsive" data-sr="enter right over 1s wait 0.5s"/></div>
+                            
+                        </div>
+                    </div>
+                   
+               
+                </div>
+                
+            </section>
+            <section class="new-project">
+                
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="project-title">
+                                <h3>Que tal comercarmos um projeto juntos?</h3>
+                                <hr></hr>
+                         
+                            <p>Estamos ansiosos para formar essa parceria que será muito proveitosa. </p>
+                            </div>
+                        </div>                       
+                    </div>
+                    <div class="row">                         
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                           <a href="" class="moreButton" data-sr="enter top over 0.5s wait 0.5s">ENTÃO, VAMOS COMEÇAR? \o/</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            
+            <section class="contact parallax"  data-speed="5">
+                <div class="container-fluid">
+                    <div class="row ">
+                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contact-title">
+                            <h3>Ou, entrar em contato com a gente</h3>
+                            <p>After our return to the dead city I passed several days in comparative idleness.
+                            On the day following our return all the warriors had ridden forth early in the morning
+                            and had not returned until just before darkness fell.
+                            As I later learned, they had been to the subterranean vaults in which the eggs were kept. </p>
+                            <hr></hr>
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 contact-form">
+                            <h3>Envie-nos um email</h3>
+                            <p>After our return to the dead city I passed several days in comparative idleness. </p>
+                            
+                        
+                            <form role="form" class="form">
+                                <div class="form-group">
+                                  <input type="email" class="form-control" id="inputName" placeholder="Digite seu nome">
+                                </div>
+                                <div class="form-group">
+                                  <input type="email" class="form-control" id="inputEmail" placeholder="Digite seu email">
+                                </div>
+                                <div class="form-group">
+                                  <input type="email" class="form-control" id="inputTel" placeholder="Digite seu telefone">
+                                </div>
+                                <textarea class="form-control" rows="3" placeholder="digite uma mensagem"></textarea>
+                                
+                                <button type="submit" class="btn">Enviar</button>
+                            </form>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 contact-form ">
+                            <h3>Localização</h3>
+                            <p>After our return to the dead city I passed several days in comparative idleness. </p>
+                            
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contact-info">
+                                        <a href="" class="icon-rede">
+                                        <img src="assets/img/ic_place_grey600_24dp.png" "/>
+                                        </a>
+                                        <p class="icon"><b>Avenida Serzedelo Correa, 401</b></p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contact-info">
+                                        <a href="" class="icon-rede">
+                                        <img src="assets/img/ic_local_phone_grey600_24dp.png" "/>
+                                        </a>
+                                        <p class="icon"><b>+55 (91) 8264-7398</b></p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contact-info">
+                                        <a href="" class="icon-rede">
+                                        <img src="assets/img/ic_local_post_office_grey600_24dp.png" "/>
+                                        </a>
+                                        <p class="icon"><b>contato@ink-black.com.br</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            
+                        </div>
+                    </div>
+                        
+                    </div>
+                    
+            </section>
+            
+            <footer id="footer" class="parallax"  data-speed="20">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 map">
+                            <div id="map-canvas" ></div>
+                        </div>
+                    </div>
+                    <div class="row footer-info">
+                        <div class=" col-xs-6 col-sm-6 col-md-6 col-lg-2">
+                             <img src="assets/img/finalbox-rodapé.png" alt="Logo do rodapé"/>
+                        </div>
+                        <div class="hidden-xs hidden-sm hidden-md col-lg-2">
+                             <p>Trav. Serzedelo Correa</p>
+                        </div>
+                        <div class="hidden-xs hidden-sm hidden-md col-lg-2">
+                             <p>Ed Tennysson Raposo</p>
+                        </div>
+                        <div class="hidden-xs hidden-sm hidden-md col-lg-2">
+                             <p>+55 (91) 982647398</p>
+                        </div>
+                        <div class="hidden-xs hidden-sm hidden-md col-lg-2">
+                             <p>contato@finalbox.com.br</p>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-2">
+                             
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            
+             <script src='assets/js/scrollReveal.min.js'></script>
+              <script type="text/javascript">
+      (function($) {
+
+        'use strict';
+
+        window.sr= new scrollReveal({
+          reset: true,
+          move: '50px',
+          mobile: true
+        });
+
+      })();
+</script>
+            
+        </body>
+    </html>
