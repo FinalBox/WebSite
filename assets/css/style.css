@@ -207,20 +207,26 @@ a.splash-arrow {
 	width: 50px;
 	height: 50px;
 	font-weight: bold;
-	-webkit-transition: all 0.1s ease;
+	/*-webkit-transition: all 0.1s ease;
 	-moz-transition: all 0.1s ease;
 	-o-transition: all 0.1s ease;
 	transition: all 0.1s ease;
 	-webkit-animation-delay: 1.5s;
 	-moz-animation-delay: 1.5s;
-	animation-delay: 1.5s;
-	
+	animation-delay: 1.5s;*/
+        -webkit-animation: cssAnimation1 1s  infinite ease-in-out;
+        -moz-animation: cssAnimation1 1s  infinite ease-in-out;
+        -o-animation: cssAnimation 1s  inifite ease-in-out;
 }
+        
+@-webkit-keyframes cssAnimation1 {from { -webkit-transform:  scale(1)  }  to { -webkit-transform:  scale(1.5) } }
+@-moz-keyframes cssAnimation1 {from { -moz-transform:  scale(1) }  to { -moz-transform:  scale(1.5) } }
+ @-o-keyframes cssAnimation1 {from { -o-transform:  scale(1) }  to { -o-transform:  scale(1.5) } }
 
-a.splash-arrow:hover {
+/*a.splash-arrow:hover {
 	text-decoration: none;
 	margin-top: 16%;
-}
+}*/
 
 /*
  *-----------------------------------------------------------------------------
@@ -516,6 +522,9 @@ h1#logo-top span {
     text-align: left;
 }
 
+.mainFeature h3{
+    margin-top: 70px;
+}
 
 .mainFeature {
     margin-top: 90px;
@@ -732,7 +741,7 @@ feature{
 }
 
 .contact-title{
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 
@@ -835,6 +844,45 @@ left: 0;
     text-align: left;
 }
 
+
+@media (max-width: 768px) {
+    .intro{
+        width: 400px;
+        margin-left: -200px;
+    }
+    
+    .intro h2{
+        font-size: 3em;
+    }
+    
+    .intro p{
+        font-size: 3em;
+        line-height: 30px;
+    }
+    
+    h3{
+        font-size: 4em;
+    }
+    
+    p{
+        font-size: 2em;
+    }
+    
+    .mainFeature h3{
+        margin-top: 0px;
+    }
+    }
+@media (min-width: 768px) and (max-width: 992px) {
+    .mainFeature h3{
+        margin-top: 0px;
+    }
+    }
+@media (min-width: 992px) and (max-width: 1200px) {
+     .mainFeature h3{
+        margin-top: 0px;
+    }
+    }
+@media (min-width: 1200px) { ... }
 
 
 
