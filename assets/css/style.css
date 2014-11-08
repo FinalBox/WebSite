@@ -510,12 +510,13 @@ nav .menu-nav li:before{
 .logo-top{
     float: left;
 }
-h1#logo-top {
+h1#logo-top {    
     float: left;
     width: 196px;
     height: 30px;
 	background-image: url('../img/finalbox-menu-top.png');
 	}
+
 h1#logo-top span {
 	display: none;
 	}

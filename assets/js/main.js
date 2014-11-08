@@ -23,7 +23,8 @@ $( document ).ready(function() {
 });
 
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 450){  
+    ir = $("#service").offset().top;
+    if ($(this).scrollTop() >= ir){  
         $('#menu-container').addClass("minimized");
 	$('#logo-minimized').removeClass("invisible");
     }
@@ -33,11 +34,7 @@ $(window).scroll(function() {
     }
 });
 
-$(window).scroll(function() {
-	if ($(this).scrollTop() > 800){
-		$('#service').addClass('fade-in');
-	}
-});
+
 
 
 
