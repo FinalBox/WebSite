@@ -1,0 +1,53 @@
+[33mcommit d870202a61ce431080050f38cf1d44b22c3fdc37[m
+Author: jeaanmichel <jean.engenheirocomp@gmail.com>
+Date:   Sat Nov 8 18:14:09 2014 -0300
+
+    Alteração no main.js: Menu so será acionado quando o #service for exibido
+
+[33mcommit f54df3fc80f515a8ab330e330046f2b4e698e32f[m
+Author: jeaanmichel <jean.engenheirocomp@gmail.com>
+Date:   Sat Nov 8 17:52:35 2014 -0300
+
+    Logo menor no em disp. mobile,float da logo do menu ajustada para esquerda, alteração da fonte, cor, das letras do menu
+
+[33mcommit e4d1e958c7d61a61c77fb326cb5e97bfc607e4f4[m
+Author: jeaanmichel <jean.engenheirocomp@gmail.com>
+Date:   Sat Nov 8 16:23:41 2014 -0300
+
+    Mudança no texto do slogan da home
+
+[33mcommit 3619a20008c7db60f2bec2bce493af9c472f0e19[m
+Author: jeaanmichel <jean.engenheirocomp@gmail.com>
+Date:   Fri Nov 7 09:55:21 2014 -0300
+
+    adiciona media queries para os dispositivos, aumentada margem dos titulos, adicionado a animação no arrow
+
+[33mcommit 3b34525ada5f1b6b60dddc32393b82935d82c1b5[m
+Author: jeaanmichel <jean.engenheirocomp@gmail.com>
+Date:   Thu Nov 6 21:46:19 2014 -0300
+
+    Desfazendo o uso do pace.js
+
+[33mcommit 910398b2eded16ce2a9857df93d6f90abad48a2b[m
+Author: jeaanmichel <jean.engenheirocomp@gmail.com>
+Date:   Thu Nov 6 21:14:54 2014 -0300
+
+    Inserção do pace.js e do pace.css
+
+[33mcommit ea6555f9e9fc0ec130a28f7d44578ba9118e59f8[m
+Author: jeaanmichel <jean.engenheirocomp@gmail.com>
+Date:   Thu Nov 6 14:48:49 2014 -0300
+
+    Desfazendo a inserção de texto no cabeçalho das features
+
+[33mcommit c8476c8793f44357f514dee31000c5d5422dbc44[m
+Author: jeaanmichel <jean.engenheirocomp@gmail.com>
+Date:   Thu Nov 6 14:42:49 2014 -0300
+
+    Edição no cabeçalho do arquivo
+
+[33mcommit 2d73c7cf85956ffd973e51839464a8605ba6fa67[m
+Author: jeaanmichel <jean.engenheirocomp@gmail.com>
+Date:   Thu Nov 6 14:20:07 2014 -0300
+
+    Arquivos do site
