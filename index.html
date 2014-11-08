@@ -7,13 +7,13 @@
             <script  type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
             <script  type="text/javascript" src="assets/js/jquery.backgroundvideo.min.js"></script>
             <script  type="text/javascript" src="assets/js/main.js"></script>
-             
+            <script src='assets/js/nprogress.js'></script>
              <!-- Latest compiled and minified CSS -->
             <link rel="stylesheet" href="assets/css/bootstrap.min.css">
                 
             <!-- ESTILO ORIGINAL DE PÁGINA --> 
             <link rel="stylesheet" href="assets/css/style.css"/>
-            
+            <link href='assets/css/nprogress.css' rel='stylesheet' />
             
             
             <!-- Latest compiled and minified JavaScript -->
@@ -65,9 +65,9 @@
         
     </script>
         </head>
-        <body>
+        <body style="display:none">
             
-            
+            <span class='nprogress-logo fade out'></span>
             <div class="wrapper">
                 <div class="screen" id="inkVideo">
                 <div class="overlay"></div>
@@ -328,7 +328,16 @@
                     </div>
                 </div>
             </footer>
-            
+<script>
+$('body').show();
+    NProgress.start();
+    //setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 4000);
+      
+      $(window).load(function() {
+		NProgress.done();
+           $('.fade').removeClass('out');
+	});
+         </script>   
              <script src='assets/js/scrollReveal.min.js'></script>
               <script type="text/javascript">
       (function($) {
