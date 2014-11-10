@@ -557,7 +557,7 @@ h1#logo-top span {
 }
 
 .mainFeature h3{
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 .mainFeature {
@@ -587,7 +587,7 @@ h1#logo-top span {
 
 .feature{
     margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 0;
     padding: 0;
 }
 
@@ -671,6 +671,25 @@ feature{
     margin-bottom: 50px;
 }
 
+/*
+ *-------------------------------------------------------------------------------------
+ * Banner WebSite
+ *---------------------------------------------------------------------------------------
+ */
+
+.banner-website{
+    background: #0f1c20
+}
+
+
+.banner-website h3{
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.banner-website a.moreButton{
+    margin-bottom: 30px;
+}
 /*
  *-------------------------------------------------------------------------------------
  * Skills
