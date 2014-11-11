@@ -1,12 +1,13 @@
 @import url(normalize.css);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900|Roboto:100,300,400,500,700,900);
 
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(http://fonts.googleapis.com/css?family=Raleway:600400,300);
 
 
-html,body{
+html,body{,
    background: #fff;
    height: 100%;
+    top:0;
 }
 
 body{
@@ -107,7 +108,7 @@ a.moreButton{
 }
 
 a.moreButton:hover{
-    color: #43d1ac;
+    color: #616161;
     background: #fff;
     text-decoration: none;
 }
@@ -683,8 +684,12 @@ feature{
 
 
 .banner-website h3{
-    margin-top: 60px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.banner-website p{
+    margin-bottom: 50px;
 }
 
 .banner-website a.moreButton{
@@ -896,6 +901,8 @@ left: 0;
     font-size: 1.8em;
     text-align: left;
 }
+
+
 
 
 @media (max-width: 768px) {
